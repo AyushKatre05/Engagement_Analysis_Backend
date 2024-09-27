@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
+from flask_cors import CORS  # Import CORS
 import pandas as pd
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for the entire app
 
 # Load the data from the CSV file
 data_file = 'instagram_data.csv'  # Path to your CSV file
@@ -34,7 +36,6 @@ def get_post_by_id(post_id):
     return jsonify(post_data)
 
 # Route 2: Get insights for all posts (cumulative)
-
 
 if __name__ == '__main__':
     app.run(debug=True)
