@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the data from the CSV file
-data_file = 'C:/Users/ayush/OneDrive/Desktop/abcd/instagram_data.csv'  # Path to your CSV file
+data_file = 'instagram_data.csv'  # Path to your CSV file
 df = pd.read_csv(data_file)
 
 # Ensure columns are of appropriate types
