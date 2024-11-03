@@ -17,6 +17,7 @@ df['shares_count'] = df['shares_count'].astype(int)
 df['saves_count'] = df['saves_count'].astype(int)
 df['engagement_rate'] = df['engagement_rate'].astype(float)
 
+#Creating API's
 @app.route('/')
 def home():
     return "Welcome to the Instagram Insights API!"
