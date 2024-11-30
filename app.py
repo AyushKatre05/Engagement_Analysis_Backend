@@ -17,7 +17,7 @@ df['engagement_rate'] = df['engagement_rate'].astype(float)
 
 @app.route('/')
 def home():
-    return "Welcome to the Instagram Insights API!"
+    return "Welcome to the Social Media Insights API!"
 
 @app.route('/post/<post_id>', methods=['GET'])
 def get_post_by_id(post_id):
